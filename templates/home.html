@@ -12,10 +12,16 @@
 	<div style="height: 10vh" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
 
-	<!-- wp:heading {"textAlign":"center","level":1,"align":"wide","style":{"spacing":{"margin":{"bottom":"0"}},"typography":{"fontStyle":"normal","fontWeight":"700"}},"textColor":"primary","fontSize":"xx-large"} -->
+	<!-- wp:heading {"textAlign":"center","level":1,"align":"wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30","top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1"}},"textColor":"primary","fontSize":"xx-large"} -->
 	<h1
 		class="wp-block-heading alignwide has-text-align-center has-primary-color has-text-color has-xx-large-font-size"
-		style="margin-bottom: 0; font-style: normal; font-weight: 700"
+		style="
+			margin-top: 0;
+			margin-bottom: var(--wp--preset--spacing--30);
+			font-style: normal;
+			font-weight: 700;
+			line-height: 1;
+		"
 	>
 		<strong>GREEN URBAN</strong>
 	</h1>
@@ -52,12 +58,12 @@
 	></div>
 	<!-- /wp:spacer -->
 
-	<!-- wp:image {"align":"center","id":12} -->
-	<figure class="wp-block-image aligncenter">
+	<!-- wp:image {"align":"center","id":5,"sizeSlug":"full","linkDestination":"none"} -->
+	<figure class="wp-block-image aligncenter size-full">
 		<img
-			src="https://greenurbanbcn.local/wp-content/uploads/2023/06/grass-draw.jpg"
+			src="https://greenurbanbcn.com/wp-content/uploads/2023/06/grass-draw.jpg"
 			alt=""
-			class="wp-image-12"
+			class="wp-image-5"
 		/>
 	</figure>
 	<!-- /wp:image -->
@@ -162,8 +168,10 @@
 					</p>
 					<!-- /wp:paragraph -->
 
-					<!-- wp:paragraph {"textColor":"secondary"} -->
-					<p class="has-secondary-color has-text-color">
+					<!-- wp:paragraph {"textColor":"secondary","fontSize":"medium"} -->
+					<p
+						class="has-secondary-color has-text-color has-medium-font-size"
+					>
 						Estamos cerca de ti y queremos intercambiar una sonrisa
 						y un apretón de manos cuando nos crucemos por ahí :-)
 					</p>
@@ -196,8 +204,8 @@
 	/>
 	<!-- /wp:separator -->
 
-	<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
-	<div
+	<!-- wp:group {"tagName":"section","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
+	<section
 		class="wp-block-group alignfull"
 		id="nuestro-trabajo"
 		style="
@@ -233,7 +241,7 @@
 			></div>
 			<!-- /wp:spacer -->
 
-			<!-- wp:media-text {"mediaId":19,"mediaLink":"https://greenurbanbcn.local/?attachment_id=19","mediaType":"image","mediaWidth":30,"mediaSizeSlug":"full","imageFill":true,"focalPoint":{"x":0.54,"y":0.52},"className":"bubble"} -->
+			<!-- wp:media-text {"mediaId":6,"mediaLink":"https://greenurbanbcn.com/?attachment_id=6","mediaType":"image","mediaWidth":30,"mediaSizeSlug":"full","imageFill":true,"className":"bubble"} -->
 			<div
 				class="wp-block-media-text alignwide is-stacked-on-mobile is-image-fill bubble"
 				style="grid-template-columns: 30% auto"
@@ -241,27 +249,19 @@
 				<figure
 					class="wp-block-media-text__media"
 					style="
-						background-image: url(https://greenurbanbcn.local/wp-content/uploads/2023/06/jardines-piscinas.jpeg);
-						background-position: 54% 52%;
+						background-image: url(https://greenurbanbcn.com/wp-content/uploads/2023/06/jardines-piscinas.jpeg);
+						background-position: 50% 50%;
 					"
 				>
 					<img
-						src="https://greenurbanbcn.local/wp-content/uploads/2023/06/jardines-piscinas.jpeg"
-						alt="Jardin con cesped artifical"
-						class="wp-image-19 size-full"
+						src="https://greenurbanbcn.com/wp-content/uploads/2023/06/jardines-piscinas.jpeg"
+						alt=""
+						class="wp-image-6 size-full"
 					/>
 				</figure>
 				<div class="wp-block-media-text__content">
-					<!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"fontSize":"large"} -->
-					<h3
-						class="wp-block-heading has-large-font-size"
-						style="
-							margin-top: 0;
-							margin-right: 0;
-							margin-bottom: 0;
-							margin-left: 0;
-						"
-					>
+					<!-- wp:heading {"level":3,"className":"wp-block-heading has-large-font-size"} -->
+					<h3 class="wp-block-heading has-large-font-size">
 						Jardines y piscinas
 					</h3>
 					<!-- /wp:heading -->
@@ -294,7 +294,7 @@
 			></div>
 			<!-- /wp:spacer -->
 
-			<!-- wp:media-text {"mediaId":20,"mediaLink":"https://greenurbanbcn.local/?attachment_id=20","mediaType":"image","mediaWidth":30,"imageFill":true,"className":"bubble"} -->
+			<!-- wp:media-text {"mediaId":7,"mediaLink":"https://greenurbanbcn.com/?attachment_id=7","mediaType":"image","mediaWidth":30,"imageFill":true,"className":"bubble"} -->
 			<div
 				class="wp-block-media-text alignwide is-stacked-on-mobile is-image-fill bubble"
 				style="grid-template-columns: 30% auto"
@@ -302,27 +302,19 @@
 				<figure
 					class="wp-block-media-text__media"
 					style="
-						background-image: url(https://greenurbanbcn.local/wp-content/uploads/2023/06/terrazas-aticos.jpeg);
+						background-image: url(https://greenurbanbcn.com/wp-content/uploads/2023/06/terrazas-aticos.jpeg);
 						background-position: 50% 50%;
 					"
 				>
 					<img
-						src="https://greenurbanbcn.local/wp-content/uploads/2023/06/terrazas-aticos.jpeg"
-						alt="Terraza con césped artifical"
-						class="wp-image-20 size-full"
+						src="https://greenurbanbcn.com/wp-content/uploads/2023/06/terrazas-aticos.jpeg"
+						alt=""
+						class="wp-image-7 size-full"
 					/>
 				</figure>
 				<div class="wp-block-media-text__content">
-					<!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"fontSize":"large"} -->
-					<h3
-						class="wp-block-heading has-large-font-size"
-						style="
-							margin-top: 0;
-							margin-right: 0;
-							margin-bottom: 0;
-							margin-left: 0;
-						"
-					>
+					<!-- wp:heading {"level":3,"className":"wp-block-heading has-large-font-size"} -->
+					<h3 class="wp-block-heading has-large-font-size">
 						Terrazas y áticos
 					</h3>
 					<!-- /wp:heading -->
@@ -358,7 +350,7 @@
 			></div>
 			<!-- /wp:spacer -->
 
-			<!-- wp:media-text {"mediaId":21,"mediaLink":"https://greenurbanbcn.local/?attachment_id=21","mediaType":"image","mediaWidth":30,"imageFill":true,"className":"bubble"} -->
+			<!-- wp:media-text {"mediaId":8,"mediaLink":"https://greenurbanbcn.com/?attachment_id=8","mediaType":"image","mediaWidth":30,"imageFill":true,"className":"bubble"} -->
 			<div
 				class="wp-block-media-text alignwide is-stacked-on-mobile is-image-fill bubble"
 				style="grid-template-columns: 30% auto"
@@ -366,27 +358,19 @@
 				<figure
 					class="wp-block-media-text__media"
 					style="
-						background-image: url(https://greenurbanbcn.local/wp-content/uploads/2023/06/efimeros.jpeg);
+						background-image: url(https://greenurbanbcn.com/wp-content/uploads/2023/06/efimeros.jpeg);
 						background-position: 50% 50%;
 					"
 				>
 					<img
-						src="https://greenurbanbcn.local/wp-content/uploads/2023/06/efimeros.jpeg"
-						alt="Instalación de cesped en un evento"
-						class="wp-image-21 size-full"
+						src="https://greenurbanbcn.com/wp-content/uploads/2023/06/efimeros.jpeg"
+						alt=""
+						class="wp-image-8 size-full"
 					/>
 				</figure>
 				<div class="wp-block-media-text__content">
-					<!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"fontSize":"large"} -->
-					<h3
-						class="wp-block-heading has-large-font-size"
-						style="
-							margin-top: 0;
-							margin-right: 0;
-							margin-bottom: 0;
-							margin-left: 0;
-						"
-					>
+					<!-- wp:heading {"level":3,"className":"wp-block-heading has-large-font-size"} -->
+					<h3 class="wp-block-heading has-large-font-size">
 						Efímeros (eventos, publicidad...)
 					</h3>
 					<!-- /wp:heading -->
@@ -414,7 +398,7 @@
 			<!-- /wp:media-text -->
 		</div>
 		<!-- /wp:group -->
-	</div>
+	</section>
 	<!-- /wp:group -->
 </main>
 <!-- /wp:group -->

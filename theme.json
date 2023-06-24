@@ -151,8 +151,8 @@
         },
         {
           "fluid": {
-            "min": "1.75rem",
-            "max": "1.875rem"
+            "min": "1.35rem",
+            "max": "1.8rem"
           },
           "size": "1.75rem",
           "slug": "large"

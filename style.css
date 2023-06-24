@@ -5,20 +5,46 @@ Description:    twentytwentythree child theme.
 Author:         Orzo Cogorzo
 Author URI:     https://github.com/orzocogorzo
 Template:       twentytwentythree
-Version:        0.1.0
+Version:        0.1.2
 */
 
 main.wp-block-group {
 	overflow-x: hidden;
 }
 
-.wp-block-media-text.bubble figure {
+@media (max-width: 600px) {
+	section h2.wp-block-heading {
+		text-align: center;
+	}
+}
+
+.wp-block-media-text.bubble figure.wp-block-media-text__media {
 	border-radius: 50%;
 	width: 260px;
 	height: 260px;
 }
 
-.wp-block-cover.grass-pattern-bg {
+.wp-block-media-text.bubble .wp-block-media-text__content .wp-block-heading {
+	margin-top: 0px;
+}
+
+@media (max-width: 600px) {
+	.wp-block-media-text.bubble figure.wp-block-media-text__media {
+		margin: auto;
+	}
+
+	.wp-block-media-text.bubble .wp-block-media-text__content {
+		text-align: center;
+	}
+
+	.wp-block-media-text.bubble
+		.wp-block-media-text__content
+		.wp-block-heading {
+		margin-top: 2rem;
+	}
+}
+
+.wp-block-cover.grass-pattern-bg .wp-block-cover__background {
 	background-image: url(assets/images/grass-pattern.png);
 	background-size: cover;
 	background-position: center;
@@ -54,7 +80,7 @@ main.wp-block-group {
 #contactForm input,
 #contactForm textarea {
 	display: block;
-	width: calc(100% - 1.9rem);
+	width: calc(100% - 1.9rem) !important;
 	border-radius: 0.5rem;
 	padding: 0.65rem 0.95rem;
 	outline: none;
@@ -63,5 +89,45 @@ main.wp-block-group {
 
 #contactForm textarea {
 	resize: none;
-	height: 300px;
+	height: 280px;
+}
+
+#contactForm.invalid input:valid,
+#contactForm.invalid textarea:valid {
+	border-color: var(--wp--preset--color--primary);
+}
+
+#contactForm.invalid input:invalid,
+#contactForm.invalid textarea:invalid {
+	border-color: #ff8686;
+}
+
+#contactForm input[type="submit"] {
+	width: 100% !important;
+	margin-top: 1rem;
+	background-color: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--secondary);
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+#contactForm .error-message {
+	display: none;
+	color: #ff8686;
+	margin-top: 0px;
+}
+
+#contactForm.error .error-message {
+	display: block;
+}
+
+#contactForm .success-message {
+	display: none;
+	color: var(--wp--preset--color--primary);
+	margin-top: 0px;
+}
+
+#contactForm.success .success-message {
+	display: block;
 }

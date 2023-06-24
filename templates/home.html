@@ -1,4 +1,4 @@
-<!-- wp:template-part {"slug":"header","theme":"greenurban","tagName":"header"} /-->
+<!-- wp:template-part {"slug":"header","theme":"greenurban"} /-->
 
 <!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
 <main
@@ -8,12 +8,16 @@
 		margin-bottom: var(--wp--preset--spacing--70);
 	"
 >
+	<!-- wp:spacer {"height":"10vh"} -->
+	<div style="height: 10vh" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- /wp:spacer -->
+
 	<!-- wp:heading {"textAlign":"center","level":1,"align":"wide","style":{"spacing":{"margin":{"bottom":"0"}},"typography":{"fontStyle":"normal","fontWeight":"700"}},"textColor":"primary","fontSize":"xx-large"} -->
 	<h1
 		class="wp-block-heading alignwide has-text-align-center has-primary-color has-text-color has-xx-large-font-size"
 		style="margin-bottom: 0; font-style: normal; font-weight: 700"
 	>
-		<strong>Green Urban</strong>
+		<strong>GREEN URBAN</strong>
 	</h1>
 	<!-- /wp:heading -->
 
@@ -58,45 +62,66 @@
 	</figure>
 	<!-- /wp:image -->
 
-	<!-- wp:spacer {"height":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dspacing\u002d\u002d60)"} -->
-	<div
-		style="height: var(--wp--preset--spacing--60)"
-		aria-hidden="true"
-		class="wp-block-spacer"
-	></div>
+	<!-- wp:spacer {"height":"15vh"} -->
+	<div style="height: 15vh" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
 
-	<!-- wp:group {"align":"full","backgroundColor":"primary","layout":{"type":"constrained"}} -->
-	<div
+	<!-- wp:group {"tagName":"section","align":"full","style":{"spacing":{"blockGap":"0","padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"primary","layout":{"type":"constrained"}} -->
+	<section
 		class="wp-block-group alignfull has-primary-background-color has-background"
+		id="nosotras"
+		style="
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
+		"
 	>
-		<!-- wp:cover {"dimRatio":20,"isDark":false,"align":"full"} -->
-		<div class="wp-block-cover alignfull is-light">
+		<!-- wp:cover {"dimRatio":20,"isDark":false,"align":"full","className":"grass-pattern-bg","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
+		<div
+			class="wp-block-cover alignfull is-light grass-pattern-bg"
+			style="
+				padding-top: 0;
+				padding-right: 0;
+				padding-bottom: 0;
+				padding-left: 0;
+			"
+		>
 			<span
 				aria-hidden="true"
 				class="wp-block-cover__background has-background-dim-20 has-background-dim"
 			></span>
 			<div class="wp-block-cover__inner-container">
-				<!-- wp:group {"style":{"spacing":{"blockGap":"0","padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
 				<div
 					class="wp-block-group"
 					style="
-						padding-top: var(--wp--preset--spacing--60);
-						padding-right: var(--wp--preset--spacing--60);
-						padding-bottom: var(--wp--preset--spacing--60);
-						padding-left: var(--wp--preset--spacing--60);
+						padding-top: var(--wp--preset--spacing--50);
+						padding-right: var(--wp--preset--spacing--50);
+						padding-bottom: var(--wp--preset--spacing--50);
+						padding-left: var(--wp--preset--spacing--50);
 					"
 				>
-					<!-- wp:heading {"textColor":"secondary"} -->
+					<!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"},"spacing":{"margin":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"textColor":"secondary","fontSize":"x-large"} -->
 					<h2
-						class="wp-block-heading has-secondary-color has-text-color"
+						class="wp-block-heading has-secondary-color has-text-color has-x-large-font-size"
+						style="
+							margin-top: var(--wp--preset--spacing--30);
+							margin-right: var(--wp--preset--spacing--30);
+							margin-bottom: var(--wp--preset--spacing--30);
+							margin-left: var(--wp--preset--spacing--30);
+							font-style: normal;
+							font-weight: 700;
+						"
 					>
 						Quiénes somos y qué pensamos
 					</h2>
 					<!-- /wp:heading -->
 
-					<!-- wp:paragraph {"textColor":"secondary"} -->
-					<p class="has-secondary-color has-text-color">
+					<!-- wp:paragraph {"textColor":"secondary","fontSize":"medium"} -->
+					<p
+						class="has-secondary-color has-text-color has-medium-font-size"
+					>
 						Somos una empresa de proyectos de interiores y
 						exteriores del barrio de Gracia y almacén en Sant Cugat
 						del Vallès con más de 40 años de experiencia en el
@@ -104,15 +129,19 @@
 					</p>
 					<!-- /wp:paragraph -->
 
-					<!-- wp:paragraph {"textColor":"secondary"} -->
-					<p class="has-secondary-color has-text-color">
+					<!-- wp:paragraph {"textColor":"secondary","fontSize":"medium"} -->
+					<p
+						class="has-secondary-color has-text-color has-medium-font-size"
+					>
 						Creemos en nuestra fuerza para crear un mundo más
 						coherente para los que vendrán.
 					</p>
 					<!-- /wp:paragraph -->
 
-					<!-- wp:paragraph {"textColor":"secondary"} -->
-					<p class="has-secondary-color has-text-color">
+					<!-- wp:paragraph {"textColor":"secondary","fontSize":"medium"} -->
+					<p
+						class="has-secondary-color has-text-color has-medium-font-size"
+					>
 						Estamos comprometidas con la sostenibilidad, la calidad,
 						la producción local, el ahorro energético, el cambio
 						climático y trabajamos en la búsqueda de materiales más
@@ -120,8 +149,10 @@
 					</p>
 					<!-- /wp:paragraph -->
 
-					<!-- wp:paragraph {"textColor":"secondary"} -->
-					<p class="has-secondary-color has-text-color">
+					<!-- wp:paragraph {"textColor":"secondary","fontSize":"medium"} -->
+					<p
+						class="has-secondary-color has-text-color has-medium-font-size"
+					>
 						Nos mueven las personas, las buenas experiencias, la
 						honestidad, el compromiso, la confianza y así como
 						nuestros clientes nos escogen a nosotras, a nosotras
@@ -139,159 +170,253 @@
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
+
+				<!-- wp:spacer -->
+				<div
+					style="height: 100px"
+					aria-hidden="true"
+					class="wp-block-spacer"
+				></div>
+				<!-- /wp:spacer -->
 			</div>
 		</div>
 		<!-- /wp:cover -->
+	</section>
+	<!-- /wp:group -->
+
+	<!-- wp:separator {"style":{"color":{"background":"#ffffff00"},"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"overlay-separator"} -->
+	<hr
+		class="wp-block-separator has-text-color has-alpha-channel-opacity has-background overlay-separator"
+		style="
+			margin-top: 0;
+			margin-bottom: 0;
+			background-color: #ffffff00;
+			color: #ffffff00;
+		"
+	/>
+	<!-- /wp:separator -->
+
+	<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
+	<div
+		class="wp-block-group alignfull"
+		id="nuestro-trabajo"
+		style="
+			padding-top: var(--wp--preset--spacing--50);
+			padding-right: var(--wp--preset--spacing--50);
+			padding-bottom: var(--wp--preset--spacing--50);
+			padding-left: var(--wp--preset--spacing--50);
+		"
+	>
+		<!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"},"spacing":{"margin":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"textColor":"contrast","fontSize":"x-large"} -->
+		<h2
+			class="wp-block-heading has-contrast-color has-text-color has-x-large-font-size"
+			style="
+				margin-top: var(--wp--preset--spacing--30);
+				margin-right: var(--wp--preset--spacing--30);
+				margin-bottom: var(--wp--preset--spacing--30);
+				margin-left: var(--wp--preset--spacing--30);
+				font-style: normal;
+				font-weight: 700;
+			"
+		>
+			Qué ofrecemos
+		</h2>
+		<!-- /wp:heading -->
+
+		<!-- wp:group {"layout":{"type":"constrained"}} -->
+		<div class="wp-block-group">
+			<!-- wp:spacer {"height":"2rem"} -->
+			<div
+				style="height: 2rem"
+				aria-hidden="true"
+				class="wp-block-spacer"
+			></div>
+			<!-- /wp:spacer -->
+
+			<!-- wp:media-text {"mediaId":19,"mediaLink":"https://greenurbanbcn.local/?attachment_id=19","mediaType":"image","mediaWidth":30,"mediaSizeSlug":"full","imageFill":true,"focalPoint":{"x":0.54,"y":0.52},"className":"bubble"} -->
+			<div
+				class="wp-block-media-text alignwide is-stacked-on-mobile is-image-fill bubble"
+				style="grid-template-columns: 30% auto"
+			>
+				<figure
+					class="wp-block-media-text__media"
+					style="
+						background-image: url(https://greenurbanbcn.local/wp-content/uploads/2023/06/jardines-piscinas.jpeg);
+						background-position: 54% 52%;
+					"
+				>
+					<img
+						src="https://greenurbanbcn.local/wp-content/uploads/2023/06/jardines-piscinas.jpeg"
+						alt="Jardin con cesped artifical"
+						class="wp-image-19 size-full"
+					/>
+				</figure>
+				<div class="wp-block-media-text__content">
+					<!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"fontSize":"large"} -->
+					<h3
+						class="wp-block-heading has-large-font-size"
+						style="
+							margin-top: 0;
+							margin-right: 0;
+							margin-bottom: 0;
+							margin-left: 0;
+						"
+					>
+						Jardines y piscinas
+					</h3>
+					<!-- /wp:heading -->
+
+					<!-- wp:paragraph -->
+					<p>Imagínatelo: podemos crear tu oasis particular</p>
+					<!-- /wp:paragraph -->
+
+					<!-- wp:paragraph -->
+					<p>
+						Nuestros productos tienen gran resistencia al calor,
+						alta recuperación y una combinación de colores muy
+						natural. Creamos espacios ideales para el disfrute de
+						toda la familia y amigos.
+					</p>
+					<!-- /wp:paragraph -->
+
+					<!-- wp:paragraph -->
+					<p>El lugar al que siempre quieres regresar.</p>
+					<!-- /wp:paragraph -->
+				</div>
+			</div>
+			<!-- /wp:media-text -->
+
+			<!-- wp:spacer {"height":"2rem"} -->
+			<div
+				style="height: 2rem"
+				aria-hidden="true"
+				class="wp-block-spacer"
+			></div>
+			<!-- /wp:spacer -->
+
+			<!-- wp:media-text {"mediaId":20,"mediaLink":"https://greenurbanbcn.local/?attachment_id=20","mediaType":"image","mediaWidth":30,"imageFill":true,"className":"bubble"} -->
+			<div
+				class="wp-block-media-text alignwide is-stacked-on-mobile is-image-fill bubble"
+				style="grid-template-columns: 30% auto"
+			>
+				<figure
+					class="wp-block-media-text__media"
+					style="
+						background-image: url(https://greenurbanbcn.local/wp-content/uploads/2023/06/terrazas-aticos.jpeg);
+						background-position: 50% 50%;
+					"
+				>
+					<img
+						src="https://greenurbanbcn.local/wp-content/uploads/2023/06/terrazas-aticos.jpeg"
+						alt="Terraza con césped artifical"
+						class="wp-image-20 size-full"
+					/>
+				</figure>
+				<div class="wp-block-media-text__content">
+					<!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"fontSize":"large"} -->
+					<h3
+						class="wp-block-heading has-large-font-size"
+						style="
+							margin-top: 0;
+							margin-right: 0;
+							margin-bottom: 0;
+							margin-left: 0;
+						"
+					>
+						Terrazas y áticos
+					</h3>
+					<!-- /wp:heading -->
+
+					<!-- wp:paragraph -->
+					<p>El césped ideal para urbanitas exigentes.</p>
+					<!-- /wp:paragraph -->
+
+					<!-- wp:paragraph -->
+					<p>
+						Tenemos gran variedad de productos con diferentes
+						niveles de suavidad, resistencia y diferentes tonos de
+						verdes y marrones que te harán viajar al norte, al sur,
+						al este y al oeste.
+					</p>
+					<!-- /wp:paragraph -->
+
+					<!-- wp:paragraph -->
+					<p>
+						Para aquellos que quieren un rincón especial sin salir
+						de casa.
+					</p>
+					<!-- /wp:paragraph -->
+				</div>
+			</div>
+			<!-- /wp:media-text -->
+
+			<!-- wp:spacer {"height":"2rem"} -->
+			<div
+				style="height: 2rem"
+				aria-hidden="true"
+				class="wp-block-spacer"
+			></div>
+			<!-- /wp:spacer -->
+
+			<!-- wp:media-text {"mediaId":21,"mediaLink":"https://greenurbanbcn.local/?attachment_id=21","mediaType":"image","mediaWidth":30,"imageFill":true,"className":"bubble"} -->
+			<div
+				class="wp-block-media-text alignwide is-stacked-on-mobile is-image-fill bubble"
+				style="grid-template-columns: 30% auto"
+			>
+				<figure
+					class="wp-block-media-text__media"
+					style="
+						background-image: url(https://greenurbanbcn.local/wp-content/uploads/2023/06/efimeros.jpeg);
+						background-position: 50% 50%;
+					"
+				>
+					<img
+						src="https://greenurbanbcn.local/wp-content/uploads/2023/06/efimeros.jpeg"
+						alt="Instalación de cesped en un evento"
+						class="wp-image-21 size-full"
+					/>
+				</figure>
+				<div class="wp-block-media-text__content">
+					<!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"fontSize":"large"} -->
+					<h3
+						class="wp-block-heading has-large-font-size"
+						style="
+							margin-top: 0;
+							margin-right: 0;
+							margin-bottom: 0;
+							margin-left: 0;
+						"
+					>
+						Efímeros (eventos, publicidad...)
+					</h3>
+					<!-- /wp:heading -->
+
+					<!-- wp:paragraph -->
+					<p>Sorpréndelos a todos y deja huella.</p>
+					<!-- /wp:paragraph -->
+
+					<!-- wp:paragraph -->
+					<p>
+						Nuestos efímeros de bajo coste son productos de
+						excelente calidad por su suavidad, fuerza, recuperación
+						y versatilidad.
+					</p>
+					<!-- /wp:paragraph -->
+
+					<!-- wp:paragraph -->
+					<p>
+						Monta y desmonta qualquier evento con plenas garantías
+						de éxito.
+					</p>
+					<!-- /wp:paragraph -->
+				</div>
+			</div>
+			<!-- /wp:media-text -->
+		</div>
+		<!-- /wp:group -->
 	</div>
 	<!-- /wp:group -->
 </main>
-<!-- /wp:group -->
-
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
-<div
-	class="wp-block-group alignfull"
-	style="
-		padding-top: var(--wp--preset--spacing--60);
-		padding-right: var(--wp--preset--spacing--60);
-		padding-bottom: var(--wp--preset--spacing--60);
-		padding-left: var(--wp--preset--spacing--60);
-	"
->
-	<!-- wp:heading {"textColor":"contrast"} -->
-	<h2 class="wp-block-heading has-contrast-color has-text-color">
-		Qué ofrecemos
-	</h2>
-	<!-- /wp:heading -->
-
-	<!-- wp:media-text {"mediaId":19,"mediaLink":"https://greenurbanbcn.local/?attachment_id=19","mediaType":"image","mediaWidth":25,"imageFill":true,"focalPoint":{"x":0.54,"y":0.52}} -->
-	<div
-		class="wp-block-media-text alignwide is-stacked-on-mobile is-image-fill"
-		style="grid-template-columns: 25% auto"
-	>
-		<figure
-			class="wp-block-media-text__media"
-			style="
-				background-image: url(https://greenurbanbcn.local/wp-content/uploads/2023/06/jardines-piscinas.jpeg);
-				background-position: 54% 52%;
-			"
-		>
-			<img
-				src="https://greenurbanbcn.local/wp-content/uploads/2023/06/jardines-piscinas.jpeg"
-				alt=""
-				class="wp-image-19 size-full"
-			/>
-		</figure>
-		<div class="wp-block-media-text__content">
-			<!-- wp:heading {"level":3} -->
-			<h3 class="wp-block-heading">Jardines y piscinas</h3>
-			<!-- /wp:heading -->
-
-			<!-- wp:paragraph -->
-			<p>Imagínatelo: podemos crear tu oasis particular</p>
-			<!-- /wp:paragraph -->
-
-			<!-- wp:paragraph -->
-			<p>
-				Nuestros productos tienen gran resistencia al calor, alta
-				recuperación y una combinación de colores muy natural. Creamos
-				espacios ideales para el disfrute de toda la familia y amigos.
-			</p>
-			<!-- /wp:paragraph -->
-
-			<!-- wp:paragraph -->
-			<p>El lugar al que siempre quieres regresar.</p>
-			<!-- /wp:paragraph -->
-		</div>
-	</div>
-	<!-- /wp:media-text -->
-
-	<!-- wp:media-text {"mediaId":20,"mediaLink":"https://greenurbanbcn.local/?attachment_id=20","mediaType":"image","mediaWidth":25,"imageFill":true} -->
-	<div
-		class="wp-block-media-text alignwide is-stacked-on-mobile is-image-fill"
-		style="grid-template-columns: 25% auto"
-	>
-		<figure
-			class="wp-block-media-text__media"
-			style="
-				background-image: url(https://greenurbanbcn.local/wp-content/uploads/2023/06/terrazas-aticos.jpeg);
-				background-position: 50% 50%;
-			"
-		>
-			<img
-				src="https://greenurbanbcn.local/wp-content/uploads/2023/06/terrazas-aticos.jpeg"
-				alt=""
-				class="wp-image-20 size-full"
-			/>
-		</figure>
-		<div class="wp-block-media-text__content">
-			<!-- wp:heading {"level":3} -->
-			<h3 class="wp-block-heading">Terrazas y áticos</h3>
-			<!-- /wp:heading -->
-
-			<!-- wp:paragraph -->
-			<p>El césped ideal para urbanitas exigentes.</p>
-			<!-- /wp:paragraph -->
-
-			<!-- wp:paragraph -->
-			<p>
-				Tenemos gran variedad de productos con diferentes niveles de
-				suavidad, resistencia y diferentes tonos de verdes y marrones
-				que te harán viajar al norte, al sur, al este y al oeste.
-			</p>
-			<!-- /wp:paragraph -->
-
-			<!-- wp:paragraph -->
-			<p>
-				Para aquellos que quieren un rincón especial sin salir de casa.
-			</p>
-			<!-- /wp:paragraph -->
-		</div>
-	</div>
-	<!-- /wp:media-text -->
-
-	<!-- wp:media-text {"mediaId":21,"mediaLink":"https://greenurbanbcn.local/?attachment_id=21","mediaType":"image","mediaWidth":25,"imageFill":true} -->
-	<div
-		class="wp-block-media-text alignwide is-stacked-on-mobile is-image-fill"
-		style="grid-template-columns: 25% auto"
-	>
-		<figure
-			class="wp-block-media-text__media"
-			style="
-				background-image: url(https://greenurbanbcn.local/wp-content/uploads/2023/06/efimeros.jpeg);
-				background-position: 50% 50%;
-			"
-		>
-			<img
-				src="https://greenurbanbcn.local/wp-content/uploads/2023/06/efimeros.jpeg"
-				alt=""
-				class="wp-image-21 size-full"
-			/>
-		</figure>
-		<div class="wp-block-media-text__content">
-			<!-- wp:heading {"level":3} -->
-			<h3 class="wp-block-heading">Efímeros (eventos, publicidad...)</h3>
-			<!-- /wp:heading -->
-
-			<!-- wp:paragraph -->
-			<p>Sorpréndelos a todos y deja huella.</p>
-			<!-- /wp:paragraph -->
-
-			<!-- wp:paragraph -->
-			<p>
-				Nuestos efímeros de bajo coste son productos de excelente
-				calidad por su suavidad, fuerza, recuperación y versatilidad.
-			</p>
-			<!-- /wp:paragraph -->
-
-			<!-- wp:paragraph -->
-			<p>
-				Monta y desmonta qualquier evento con plenas garantías de éxito.
-			</p>
-			<!-- /wp:paragraph -->
-		</div>
-	</div>
-	<!-- /wp:media-text -->
-</div>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","theme":"greenurban","tagName":"footer"} /-->

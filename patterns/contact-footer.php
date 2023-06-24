@@ -58,9 +58,9 @@
 				<!-- /wp:paragraph -->
 
 				<!-- wp:social-links {"iconColor":"contrast","iconColorValue":"#444444","className":"is-style-logos-only"} -->
-				<ul class="wp-block-social-links has-icon-color is-style-logos-only"><!-- wp:social-link {"url":"@greenurbanbcn","service":"instagram"} /-->
+				<ul class="wp-block-social-links has-icon-color is-style-logos-only"><!-- wp:social-link {"url":"https://www.instagram.com/greenurbanbcn/","service":"instagram"} /-->
 
-					<!-- wp:social-link {"url":"000000000","service":"whatsapp"} /-->
+					<!-- wp:social-link {"url":"https://wa.me/34622569280","service":"whatsapp"} /-->
 
 					<!-- wp:social-link {"url":"info@greenurbanbcn.com","service":"mail"} /-->
 				</ul>

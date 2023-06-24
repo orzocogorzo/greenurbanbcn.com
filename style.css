@@ -7,3 +7,61 @@ Author URI:     https://github.com/orzocogorzo
 Template:       twentytwentythree
 Version:        0.1.0
 */
+
+main.wp-block-group {
+	overflow-x: hidden;
+}
+
+.wp-block-media-text.bubble figure {
+	border-radius: 50%;
+	width: 260px;
+	height: 260px;
+}
+
+.wp-block-cover.grass-pattern-bg {
+	background-image: url(assets/images/grass-pattern.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.wp-block-separator.overlay-separator {
+	position: relative;
+	width: 100vw;
+	margin-left: calc(var(--wp--style--root--padding-right) * -1) !important;
+	overflow: visible;
+}
+
+.wp-block-separator.overlay-separator::after {
+	position: absolute;
+	width: inherit;
+	content: "";
+	background-image: url(assets/images/grass-white-profile.png);
+	background-size: cover;
+	background-position-y: bottom;
+	background-position-x: center;
+	background-repeat: no-repeat;
+	bottom: -8vh;
+	left: 0;
+	height: 20vh;
+	z-index: 10;
+}
+
+#contactForm label {
+	font-size: var(--wp--preset--font-size--small);
+}
+
+#contactForm input,
+#contactForm textarea {
+	display: block;
+	width: calc(100% - 1.9rem);
+	border-radius: 0.5rem;
+	padding: 0.65rem 0.95rem;
+	outline: none;
+	border: 1px solid var(--wp--preset--color--contrast);
+}
+
+#contactForm textarea {
+	resize: none;
+	height: 300px;
+}

@@ -28,7 +28,7 @@
           "slug": "base"
         },
         {
-          "color": "#000000",
+          "color": "#444444",
           "name": "Contrast",
           "slug": "contrast"
         },
@@ -45,7 +45,7 @@
       ]
     },
     "layout": {
-      "contentSize": "840px",
+      "contentSize": "920px",
       "wideSize": "1200px"
     },
     "spacing": {
@@ -54,7 +54,7 @@
       },
       "spacingSizes": [
         {
-          "size": "clamp(1.5rem, 5vw, 2rem)",
+          "size": "clamp(1.25rem, 4vw, 1.75rem)",
           "slug": "30",
           "name": "1"
         },
@@ -158,16 +158,19 @@
           "slug": "large"
         },
         {
-          "fluid": false,
+          "fluid": {
+            "min": "1.875rem",
+            "max": "2.25rem"
+          },
           "size": "2.25rem",
           "slug": "x-large"
         },
         {
           "fluid": {
-            "min": "4rem",
-            "max": "10rem"
+            "min": "3.5rem",
+            "max": "5rem"
           },
-          "size": "3rem",
+          "size": "3.5rem",
           "slug": "xx-large"
         }
       ]

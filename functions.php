@@ -46,6 +46,7 @@ function gu_enqueue_scripts($hook)
 }
 
 add_action("wp_ajax_contact_form", "gu_ajax_contact_form");
+add_action("wp_ajax_nopriv_contact_form", "gu_ajax_contact_form");
 function gu_ajax_contact_form()
 {
 	check_ajax_referer('contact_form');
